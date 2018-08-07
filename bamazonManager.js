@@ -1,5 +1,5 @@
 
-// creating mysqlconnection
+// conecting fun.js file
 var fun = require('./fun.js');
 
 
@@ -19,16 +19,20 @@ inquirer.prompt({
 .then(function (answers) {
     //if statment 
     if (answers.input == "View Products for Sale") {
-      fun.productSale();
+    //   productsale function
+        fun.productSale();
     }
 
     if (answers.input == "View Low Inventory") {
-      fun.lowinventory();
+    //   lowinventory fuction
+        fun.lowinventory();
 }
 if (answers.input == "Add to Inventory") {
+    // addinventory function
     fun.addinventory();
 }
 if (answers.input == "Add new product") {
+    // newproduct function
     fun.newproduct();
 }
   });
